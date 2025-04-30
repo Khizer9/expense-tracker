@@ -133,7 +133,7 @@ const ExpenseList: React.FC = () => {
                     <TableCell>{expense.category}</TableCell>
                     <TableCell>{expense.description}</TableCell>
                     <TableCell className="text-right font-medium">
-                      ${expense.amount.toFixed(2)}
+                      PKR {expense.amount.toFixed(2)}
                     </TableCell>
                   </TableRow>
                 ))}

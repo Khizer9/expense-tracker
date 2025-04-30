@@ -33,7 +33,7 @@ const ExpenseSummary: React.FC = () => {
       <CardContent>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="stat-card">
-            <span className="stat-value">PKR{summary.totalAmount.toFixed(2)}</span>
+            <span className="stat-value">PKR {summary.totalAmount.toFixed(2)}</span>
             <span className="stat-label">Total Expenses</span>
           </div>
           <div className="stat-card">
@@ -42,7 +42,7 @@ const ExpenseSummary: React.FC = () => {
           </div>
           <div className="stat-card">
             <span className="stat-value">
-              PKR{summary.expenseCount > 0 
+              PKR {summary.expenseCount > 0 
                 ? (summary.totalAmount / summary.expenseCount).toFixed(2) 
                 : "0.00"}
             </span>

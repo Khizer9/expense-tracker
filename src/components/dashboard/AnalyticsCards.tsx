@@ -50,7 +50,7 @@ const AnalyticsCards: React.FC = () => {
               <p className="text-sm font-medium text-muted-foreground">Top Category</p>
               <h3 className="text-2xl font-bold mt-1">{highestCategory}</h3>
               <p className="text-sm text-muted-foreground mt-1">
-                PKR{summary.categoryTotals[highestCategory as keyof typeof summary.categoryTotals]?.toFixed(2) || "0.00"}
+                PKR {summary.categoryTotals[highestCategory as keyof typeof summary.categoryTotals]?.toFixed(2) || "0.00"}
               </p>
             </div>
             <div className="p-2 rounded-full bg-purple-100">
@@ -65,7 +65,7 @@ const AnalyticsCards: React.FC = () => {
           <div className="flex items-start justify-between">
             <div>
               <p className="text-sm font-medium text-muted-foreground">Daily Average</p>
-              <h3 className="text-2xl font-bold mt-1">${avgPerDay}</h3>
+              <h3 className="text-2xl font-bold mt-1">PKR {avgPerDay}</h3>
               <p className="text-sm text-muted-foreground mt-1">
                 On days with expenses
               </p>

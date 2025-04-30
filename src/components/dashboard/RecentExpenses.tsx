@@ -30,7 +30,7 @@ const RecentExpenses: React.FC = () => {
                     <span>{format(new Date(expense.date), "MMM d")}</span>
                   </div>
                 </div>
-                <div className="text-lg font-semibold">PKR{expense.amount.toFixed(2)}</div>
+                <div className="text-lg font-semibold">PKR {expense.amount.toFixed(2)}</div>
               </div>
             ))}
           </div>

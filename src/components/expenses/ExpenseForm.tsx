@@ -201,7 +201,7 @@ const ExpenseForm: React.FC = () => {
               )}
             />
             
-            <Button type="submit" className="w-full bg-expense-purple-400 hover:bg-expense-purple-500">
+            <Button type="submit" className="w-full bg-expense-purple-600 hover:bg-expense-purple-500">
               Add Expense
             </Button>
           </form>
