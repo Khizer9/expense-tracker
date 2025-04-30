@@ -1,0 +1,30 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f9fa; /* Adjust as needed */
+}
+
+.sidebar.collapsed {
+  align-items: center;
+}
+
+.sidebar .sidebar-header,
+.sidebar .sidebar-footer {
+  text-align: center;
+}
+
+.sidebar .sidebar-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0.5rem;
+  transition: padding 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-content {
+  align-items: center;
+  padding: 0;
+}
