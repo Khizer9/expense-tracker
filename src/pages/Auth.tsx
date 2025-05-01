@@ -122,7 +122,7 @@ const Auth: React.FC = () => {
                         </FormItem>
                       )}
                     />
-                    <Button type="submit" className="w-full">Login</Button>
+                    <Button type="submit" className="w-full bg-expense-purple-600 hover:bg-expense-purple-500">Login</Button>
                   </form>
                 </Form>
               </TabsContent>

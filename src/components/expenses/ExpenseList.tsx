@@ -260,7 +260,7 @@ const ExpenseList: React.FC = () => {
             <Button variant="outline" onClick={() => setIsEditModalOpen(false)}>
               Cancel
             </Button>
-            <Button onClick={handleEditSubmit}>Save</Button>
+            <Button onClick={handleEditSubmit} className="bg-expense-purple-600 hover:bg-expense-purple-500">Save</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
