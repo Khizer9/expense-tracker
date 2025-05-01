@@ -34,7 +34,7 @@ const CategoryBreakdown: React.FC = () => {
                 tick={{ fontSize: 12 }}
               />
               <Tooltip 
-                formatter={(value) => [`$${Number(value).toFixed(2)}`, 'Amount']}
+                formatter={(value) => [`PKR ${Number(value).toFixed(2)}`, 'Amount']}
                 labelStyle={{ fontWeight: 'bold' }}
               />
               <Bar dataKey="amount" fill="#9b87f5" radius={[0, 4, 4, 0]} />

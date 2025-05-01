@@ -31,8 +31,8 @@ const ExpenseChart: React.FC = () => {
   
   // Calculate percentage formatter
   const percentageFormatter = (value: number) => {
-    if (summary.totalAmount === 0) return "0%";
-    return `${((value / summary.totalAmount) * 100).toFixed(0)}%`;
+    if (summary.totalAmount === 0) return "0 PKR";
+    return `${((value / summary.totalAmount) * 100).toFixed(0)} PKR`;
   };
   
   // Custom tooltip
@@ -41,7 +41,7 @@ const ExpenseChart: React.FC = () => {
       return (
         <div className="bg-white p-2 border rounded shadow-sm">
           <p className="font-semibold">{payload[0].name}</p>
-          <p className="text-sm">${payload[0].value.toFixed(2)}</p>
+          <p className="text-sm">PKR {payload[0].value.toFixed(2)}</p>
           <p className="text-xs text-muted-foreground">
             {percentageFormatter(payload[0].value)}
           </p>
@@ -70,7 +70,7 @@ const ExpenseChart: React.FC = () => {
                 dataKey="value"
                 labelLine={false}
                 label={({ name, percent }) => 
-                  percent > 0.05 ? `${name} (${(percent * 100).toFixed(0)}%)` : ""
+                  name
                 }
               >
                 {chartData.map((entry, index) => (
