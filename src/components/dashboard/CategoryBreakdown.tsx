@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useExpenses } from "@/context/ExpenseContext";
@@ -35,7 +34,8 @@ const CategoryBreakdown: React.FC = () => {
               />
               <Tooltip 
                 formatter={(value) => [`PKR ${Number(value).toFixed(2)}`, 'Amount']}
-                labelStyle={{ fontWeight: 'bold' }}
+                labelStyle={{ fontWeight: 'bold', color: '#000' }} // Ensure label text is visible
+                itemStyle={{ color: '#000' }} // Ensure value text is visible
               />
               <Bar dataKey="amount" fill="#9b87f5" radius={[0, 4, 4, 0]} />
             </BarChart>

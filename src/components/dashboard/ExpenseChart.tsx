@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useExpenses } from "@/context/ExpenseContext";
@@ -39,10 +38,10 @@ const ExpenseChart: React.FC = () => {
   const CustomTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-white p-2 border rounded shadow-sm">
-          <p className="font-semibold">{payload[0].name}</p>
-          <p className="text-sm">PKR {payload[0].value.toFixed(2)}</p>
-          <p className="text-xs text-muted-foreground">
+        <div className="bg-white dark:bg-gray-800 p-2 border rounded shadow-sm">
+          <p className="font-semibold text-black dark:text-white">{payload[0].name}</p>
+          <p className="text-sm text-black dark:text-white">PKR {payload[0].value.toFixed(2)}</p>
+          <p className="text-xs text-muted-foreground dark:text-gray-400">
             {percentageFormatter(payload[0].value)}
           </p>
         </div>
